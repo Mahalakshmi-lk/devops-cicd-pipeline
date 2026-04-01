@@ -1,35 +1,36 @@
 # devops-cicd-pipeline
 CI/CD pipeline using Jenkins, Docker, and Kubernetes for automated deployment
 
-# DevOps CI/CD Pipeline 🚀
+# 🚀 DevOps CI/CD Pipeline Project
 
-## 📌 Overview
-This project demonstrates a CI/CD pipeline using Jenkins, Docker, and Kubernetes to automate application deployment.
-
----
-
-## 🧩 Architecture
-GitHub → Jenkins → Docker → Docker Hub → Kubernetes
+This project demonstrates a complete CI/CD pipeline using Jenkins, Docker, and GitHub.
 
 ---
 
-## ⚙️ Tools Used
+## 📌 Project Overview
+This pipeline automates the process of:
+- Cloning code from GitHub
+- Building a Docker image
+- Pushing the image to Docker Hub
+
+---
+
+## 🛠️ Tools & Technologies Used
 - Jenkins
 - Docker
-- Kubernetes
-- GitHub
+- Git & GitHub
+- Nginx (for serving app)
 
 ---
 
-## 🚀 Workflow
-1. Code pushed to GitHub  
-2. Jenkins builds Docker image  
-3. Image pushed to Docker Hub  
-4. Application deployed to Kubernetes  
+## ⚙️ Pipeline Workflow
+
+1. Developer pushes code to GitHub
+2. Jenkins pulls the latest code
+3. Docker image is built using Dockerfile
+4. Image is pushed to Docker Hub
 
 ---
 
-## 📁 Files
-- index.html
-- Dockerfile
-- Jenkinsfile
+## 📂 Project Structure
+
