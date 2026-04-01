@@ -15,22 +15,18 @@ This pipeline automates the process of:
 
 ---
 
-## 🛠️ Tools & Technologies Used
-- Jenkins
-- Docker
-- Git & GitHub
-- Nginx (for serving app)
+## 🐳 Docker Image
+docker pull mahalakshmi76/devops-app
 
----
+## 📁 Project Structure
+- Dockerfile
+- Jenkinsfile
+- index.html
 
-## ⚙️ Pipeline Workflow
+## 🚀 Output
+A simple web application deployed using Nginx inside Docker container.
 
-1. Developer pushes code to GitHub
-2. Jenkins pulls the latest code
-3. Docker image is built using Dockerfile
-4. Image is pushed to Docker Hub
+## 👩‍💻 Author
+Mahalakshmi L K
 
----
-
-## 📂 Project Structure
 
