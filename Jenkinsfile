@@ -2,9 +2,16 @@ pipeline {
     agent any
 
     stages {
-        stage('Clone') {
+
+        stage('Clone Code') {
             steps {
-                git 'https://github.com/Mahalakshmi-lk/devops-cicd-pipeline.git'
+                git branch: 'main', url: 'https://github.com/Mahalakshmi-lk/devops-cicd-pipeline.git'
+            }
+        }
+
+        stage('Docker Login') {
+            steps {
+                sh 'docker login -u mahalakshmi76 -p YOUR_PASSWORD'
             }
         }
 
@@ -14,7 +21,7 @@ pipeline {
             }
         }
 
-        stage('Push Docker Image') {
+        stage('Push to Docker Hub') {
             steps {
                 sh 'docker push mahalakshmi76/devops-app'
             }
